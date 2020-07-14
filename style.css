@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+  background: #eee;
+  opacity: 0.05;
+  border-radius: 20px;
+}
+.fixed-nav li {
+  border-bottom: 1px solid #000;
+}
+.fixed-nav:hover {
+  opacity: 0.5;
+}
+/* .links-container {
+  height: 0;
+  overflow: hidden;
+} */
+.links a {
+  font-size: 2rem;
+  display: block;
+  font-weight: 200;
+  padding: 1rem 0;
+  color: black;
+  opacity: 0.7;
+  text-transform: uppercase;
+  text-align: center;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.banner h1 {
+  padding: 2rem;
+}
+.banner .container p {
+  font-family: "Montserrat", sans-serif;
+  opacity: 0.5;
+}
+.title h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 5rem 0;
+}
+#iam ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#iam ol li {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  font-family: "Do Hyeon", sans-serif;
+}
+.section {
+  margin: 40vh 0;
+}
+
+#projects ul li {
+  padding: 5vh 0;
+}
+
+.project-thumbnail img {
+  width: 50vw;
+}
+.project {
+  display: flex;
+  flex-direction: row;
+  font-family: "Do Hyeon", sans-serif;
+}
+.project-desc {
+  display: flex;
+  flex-direction: column;
+}
+.project-desc h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2vh;
+}
+.project-desc li {
+  margin-left: 1.5rem;
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+}
+#contact {
+  opacity: 0.5;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+#contact h2 {
+  padding: 0.5rem 0;
+}
+#contact li {
+  padding: 0.5rem 0;
+}
+footer {
+  margin: 5vh 0;
+  text-align: center;
+  opacity: 0.5;
+  border-top: 1px solid #000;
+}
+@media (min-width: 800px) {
+  .links-container {
+    height: auto !important;
+    margin-bottom: 10vh;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+  }
+  .links li {
+    padding: 1rem;
+    list-style: none;
+  }
+  .fixed-nav {
+    width: 100%;
+    background: #eee;
+    opacity: 0.05;
+    border-radius: 20px;
+    padding: 0;
+  }
+  .fixed-nav li {
+    border: none;
+  }
+}
