@@ -58,6 +58,8 @@ a {
   text-align: center;
   font-size: 3rem;
   padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
 }
 #iam ol {
   display: flex;
@@ -73,19 +75,24 @@ a {
 .section {
   margin: 40vh 0;
 }
-
+/* PROJECTS*/
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Do Hyeon", sans-serif;
+}
 #projects ul li {
   padding: 5vh 0;
 }
 
 .project-thumbnail img {
-  width: 50vw;
+  width: 80vw;
+
+  margin-bottom: 5vh;
 }
-.project {
-  display: flex;
-  flex-direction: row;
-  font-family: "Do Hyeon", sans-serif;
-}
+
 .project-desc {
   display: flex;
   flex-direction: column;
@@ -100,6 +107,7 @@ a {
   padding: 0.5rem 0;
   font-size: 1.2rem;
 }
+/*CONTACT*/
 #contact {
   opacity: 0.5;
   text-align: center;
@@ -117,7 +125,7 @@ footer {
   opacity: 0.5;
   border-top: 1px solid #000;
 }
-@media (min-width: 800px) {
+@media (min-width: 700px) {
   .links-container {
     height: auto !important;
     margin-bottom: 10vh;
@@ -142,5 +150,19 @@ footer {
   }
   .fixed-nav li {
     border: none;
+  }
+  .title h2 {
+    display: block;
+    position: relative;
+  }
+  .underline {
+    left: 50%;
+  }
+  .project-thumbnail img {
+    width: 50vw;
+  }
+  .project {
+    display: flex;
+    flex-direction: row;
   }
 }
